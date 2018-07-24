@@ -1,18 +1,18 @@
 {
-  "name": "form-submitter",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
-  },
-  "license": "ISC",
-  "dependencies": {
-    "babel-cli": "6.26.0",
-    "babel-loader": "7.1.5",
-    "babel-polyfill": "6.26.0",
-    "babel-preset-env": "1.7.0",
-    "webpack": "4.16.2",
-    "webpack-cli": "3.1.0",
-    "webpack-dev-server": "3.1.5"
-  }
+	"name": "form-submitter",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "webpack-dev-server --mode development",
+		"build": "webpack --mode production"
+	},
+	"license": "ISC",
+	"dependencies": {
+		"babel-cli": "6.26.0",
+		"babel-loader": "7.1.5",
+		"babel-polyfill": "6.26.0",
+		"babel-preset-env": "1.7.0",
+		"webpack": "4.16.2",
+		"webpack-cli": "3.1.0",
+		"webpack-dev-server": "3.1.5"
+	}
 }

@@ -3,6 +3,8 @@ const MAX_FILE_SIZE = 4096
 document.querySelector('form').addEventListener('submit', e => {
 	e.preventDefault()
 
+	document.querySelectorAll('.custom-error').forEach(el => el.remove())
+
 	const fileInputs = []
 
 	for (let i = 0; i < e.target.length; i++) {
@@ -28,14 +30,10 @@ document.querySelector('form').addEventListener('submit', e => {
 	if (errors.length > 0) {
 		errors.forEach(name => {
 			document.querySelectorAll(`input[name=${name}]`).forEach(input => {
-				const previousError = document.querySelector(`#${name}-error`)
-
-				if (!previousError) {
-					input.insertAdjacentHTML(
-						'afterend',
-						`<p id="${name}-error" style="color:#DC3023;">Размер файла превышает допустимое значение</p>`
-					)
-				}
+				input.insertAdjacentHTML(
+					'afterend',
+					`<p id="${name}-error" class="custom-error" style="color:#DC3023;">Размер файла превышает допустимое значение</p>`
+				)
 			})
 		})
 	} else {
